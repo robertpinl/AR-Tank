@@ -21,67 +21,120 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </arView>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh9-jv-fCA" userLabel="tankRight">
-                                <rect key="frame" x="314" y="782" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="arrowshape.right.fill" catalog="system" symbolScale="default"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="rightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fau-RS-zBn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qte-oX-i1e" userLabel="tankForward">
-                                <rect key="frame" x="247" y="805" width="45" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.up.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="forwardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xhu-dV-ONq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKp-a3-lD0" userLabel="fireButton">
-                                <rect key="frame" x="245" y="742" width="50" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="flame.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="fireTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nr0-uR-Bf1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Coa-R4-qP2" userLabel="turretLeft">
-                                <rect key="frame" x="156" y="738" width="51" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left" catalog="system"/>
-                                <connections>
-                                    <action selector="turretLeftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5V-ne-Uw5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-dn-w6f" userLabel="turretRight">
-                                <rect key="frame" x="329" y="737" width="51" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system"/>
-                                <connections>
-                                    <action selector="turrentRightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fm3-fq-gyQ"/>
-                                    <action selector="turretLeftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhE-HD-6Rj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gd-rT-QZ6" userLabel="tankLeft">
-                                <rect key="frame" x="143" y="780" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.left.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="leftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PL5-Zx-Qkc"/>
-                                    <action selector="rightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2wA-mT-hgv"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3n0-sm-T75">
+                                <rect key="frame" x="47" y="702" width="320" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="icq-Up-7Nd">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Coa-R4-qP2" userLabel="turretLeft">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="hVF-sa-SIC"/>
+                                                    <constraint firstAttribute="width" constant="80" id="kT8-jh-eeT"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="arrowshape.turn.up.left" catalog="system" symbolScale="large"/>
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="turretLeftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5V-ne-Uw5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKp-a3-lD0" userLabel="fireButton">
+                                                <rect key="frame" x="120" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="9sI-yi-GQN"/>
+                                                    <constraint firstAttribute="height" constant="80" id="DUd-it-NgZ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="flame.circle.fill" catalog="system" symbolScale="large"/>
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="fireTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nr0-uR-Bf1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-dn-w6f" userLabel="turretRight">
+                                                <rect key="frame" x="240" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="fHi-ZD-XfW"/>
+                                                    <constraint firstAttribute="width" constant="80" id="iks-6G-9nb"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="arrowshape.turn.up.right" catalog="system" symbolScale="large"/>
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="turrentRightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fm3-fq-gyQ"/>
+                                                    <action selector="turretLeftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhE-HD-6Rj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="mTv-jt-DFs">
+                                        <rect key="frame" x="0.0" y="80" width="320" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gd-rT-QZ6" userLabel="tankLeft">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="iTe-8Q-iLr"/>
+                                                    <constraint firstAttribute="width" constant="80" id="oJS-8D-w9k"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="arrowshape.left.fill" catalog="system" symbolScale="large"/>
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="leftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PL5-Zx-Qkc"/>
+                                                    <action selector="rightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2wA-mT-hgv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qte-oX-i1e" userLabel="tankForward">
+                                                <rect key="frame" x="120" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Rgv-F1-U02"/>
+                                                    <constraint firstAttribute="height" constant="80" id="hbS-iF-v1W"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="arrowtriangle.up.fill" catalog="system" symbolScale="large"/>
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forwardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xhu-dV-ONq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh9-jv-fCA" userLabel="tankRight">
+                                                <rect key="frame" x="240" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="5Og-WN-c96"/>
+                                                    <constraint firstAttribute="width" constant="80" id="cup-U3-YeI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="arrowshape.right.fill" catalog="system" symbolScale="large"/>
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="rightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fau-RS-zBn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xQi-VN-jmt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3n0-sm-T75" firstAttribute="bottom" secondItem="xQi-VN-jmt" secondAttribute="bottom" id="ivZ-TU-MJ5"/>
+                            <constraint firstItem="3n0-sm-T75" firstAttribute="centerX" secondItem="ngP-8F-Kjz" secondAttribute="centerX" id="z0A-Lg-xGW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="arView" destination="03U-PH-gfx" id="EKw-E9-HqI"/>
@@ -99,6 +152,9 @@
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="104"/>
         <image name="arrowtriangle.up.fill" catalog="system" width="128" height="120"/>
         <image name="flame.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
