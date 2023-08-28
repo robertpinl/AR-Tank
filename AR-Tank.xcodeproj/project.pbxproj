@@ -9,20 +9,21 @@
 /* Begin PBXBuildFile section */
 		2260F5E82A9C7694008EEA6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260F5E72A9C7694008EEA6E /* AppDelegate.swift */; };
 		2260F5EA2A9C7694008EEA6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2260F5E92A9C7694008EEA6E /* ViewController.swift */; };
-		2260F5EC2A9C7694008EEA6E /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2260F5EB2A9C7694008EEA6E /* Experience.rcproject */; };
 		2260F5EF2A9C7694008EEA6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2260F5ED2A9C7694008EEA6E /* Main.storyboard */; };
 		2260F5F12A9C7695008EEA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2260F5F02A9C7695008EEA6E /* Assets.xcassets */; };
 		2260F5F42A9C7695008EEA6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2260F5F22A9C7695008EEA6E /* LaunchScreen.storyboard */; };
+		2260F5FC2A9C79F8008EEA6E /* TinyToyTank.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2260F5FB2A9C79F8008EEA6E /* TinyToyTank.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2260F5E42A9C7694008EEA6E /* AR-Tank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Tank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2260F5E72A9C7694008EEA6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2260F5E92A9C7694008EEA6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2260F5EB2A9C7694008EEA6E /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		2260F5EE2A9C7694008EEA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2260F5F02A9C7695008EEA6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2260F5F32A9C7695008EEA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2260F5FA2A9C7839008EEA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2260F5FB2A9C79F8008EEA6E /* TinyToyTank.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TinyToyTank.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +56,10 @@
 		2260F5E62A9C7694008EEA6E /* AR-Tank */ = {
 			isa = PBXGroup;
 			children = (
+				2260F5FA2A9C7839008EEA6E /* Info.plist */,
 				2260F5E72A9C7694008EEA6E /* AppDelegate.swift */,
 				2260F5E92A9C7694008EEA6E /* ViewController.swift */,
-				2260F5EB2A9C7694008EEA6E /* Experience.rcproject */,
+				2260F5FB2A9C79F8008EEA6E /* TinyToyTank.rcproject */,
 				2260F5ED2A9C7694008EEA6E /* Main.storyboard */,
 				2260F5F02A9C7695008EEA6E /* Assets.xcassets */,
 				2260F5F22A9C7695008EEA6E /* LaunchScreen.storyboard */,
@@ -137,8 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2260F5EA2A9C7694008EEA6E /* ViewController.swift in Sources */,
+				2260F5FC2A9C79F8008EEA6E /* TinyToyTank.rcproject in Sources */,
 				2260F5E82A9C7694008EEA6E /* AppDelegate.swift in Sources */,
-				2260F5EC2A9C7694008EEA6E /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +289,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 24UHT2AGTS;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AR-Tank/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -317,6 +320,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 24UHT2AGTS;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AR-Tank/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
